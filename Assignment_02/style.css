@@ -93,8 +93,17 @@ a:hover {
 }
 
 
+#left_button.disabled_button {
+    background-color: #e6e3d0;
+    margin-left: 30%;
+}
+
+#right_button.disabled_button {
+    background-color: #f0ece4;
+    margin-right: 30%;
+}
+
 #left_button {
-    
     margin-left: 30%;
 }
 
