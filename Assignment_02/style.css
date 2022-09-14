@@ -48,7 +48,7 @@ a {
 #coordinates:hover {
     text-decoration: underline;
     color: black;
-    background-color:#dbdbd7;
+    /* background-color:#dbdbd7; */
 }
 
 .button {
