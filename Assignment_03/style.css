@@ -1,0 +1,585 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src:  url('assets/SFMonoRegular.woff') format('woff');
+  }
+
+* {
+    font-size: 10pt;
+    font-family: 'MyWebFont', Fallback, monospace;
+}
+
+pre {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0px 50px 0px 0px; */
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 50px;
+    padding-top: 20px;
+}
+
+.crumb {
+    display: inline-block;
+}
+
+.crumb a::after {
+    display: inline-block;
+    color: #000;
+    content: '>';
+    font-size: 80%;
+    font-weight: bold;
+    padding: 0px 0px 0px 10px;
+}
+
+.main_content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -55%);
+}
+
+#bottom_nav {
+    display: flex;
+    justify-content:center;
+}
+
+#page_flip {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 30px 0px 30px;
+}
+
+h1 {
+    font-weight: normal;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+}
+
+.cabinets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* margin: 0px 0px 0px 30px; */
+    /* width: 200px; */
+}
+
+.folders {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 0px 0px 0px;
+    /* width: 200px; */
+}
+
+.cabinet {
+    margin: 0px 0px 0px 0px; ; 
+    /* height: 100px; */
+}
+
+#cabinet_2_b {
+    margin: 0px 0px 500px 0px;
+}
+
+.folder {
+    margin: 50px ;
+    height: 100px;
+}
+
+a {
+    color:black;
+}
+
+a.drawer{
+    color: black;
+    text-decoration: none;
+}
+
+a.folder{
+    color: black;
+    text-decoration: none;
+}
+
+#credit_line {
+    margin-top: 50px;
+}
+
+
+.cabinets {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#cabinet_1_a::after{
+    content:  
+    '\a   _________________________'
+    '\a |\\                          \\'
+    '\a | \\                          \\'
+    '\a |  \\                          \\'
+    '\a |   \'---------------------------';
+    white-space: pre;
+}
+
+#cabinet_1_b::after {
+    content:  
+    '\a |   |                           |'
+    '\a |   |                           |   '
+    '\a |   |          _______          |'
+    '\a |   |         | Yvonne|         |'
+    '\a |   |          -------          |'
+    '\a |\\  |          =_____=          |'
+    '\a | \\ |                           |'
+    '\a |  \\|                           |'
+    '\a |   \'===========================\''
+    '\a |   |                           |'
+    '\a |   |                           |'
+    ;
+    white-space: pre;
+}
+
+#cabinet_1_b:hover::after {
+    content: 
+    '\a |   |\\    / / /___\\__________   \\'
+    '\a |   | \'---------------------------'
+    '\a |   | |                           |'
+    '\a |   | |                           |'
+    '\a |   | |          _______          |'
+    '\a |\\  | |         | Yvonne|         | '
+    '\a | \\ | |          -------          |'
+    '\a |  \\| |          =_____=          |'
+    '\a |   \\ |                           |'
+    '\a |   |\\|                           |'
+    '\a |   | \'---------------------------\''
+    ;
+    white-space: pre;
+}
+
+#cabinet_1_c::after {
+    content:     
+    '\a |   |          _______          |'
+    '\a |   |         | poems |         |'
+    '\a |   |          -------          |'
+    '\a \\   |          =_____=          |'
+    '\a  \\  |                           |'
+    '\a   \\ |                           |'
+    '\a    \\|___________________________|'
+    '\a'
+    '\a'
+    '\a'
+    ;
+    white-space: pre;
+}
+
+#cabinet_2_a::after{
+    content:  
+    '\a   _________________________'
+    '\a |\\                          \\'
+    '\a | \\                          \\'
+    '\a |  \\                          \\'
+    '\a |   \'---------------------------';
+    white-space: pre;
+}
+
+#cabinet_2_b::after {
+    content:  
+    '\a |   |                           |'
+    '\a |   |                           |   '
+    '\a |   |          _______          |'
+    '\a |   |         | Laila |         |'
+    '\a |   |          -------          |'
+    '\a |\\  |          =_____=          |'
+    '\a | \\ |                           |'
+    '\a |  \\|                           |'
+    '\a |   \'===========================\''
+    '\a |   |                           |'
+    '\a |   |                           |'
+    ;
+    white-space: pre;
+}
+
+#cabinet_2_b:hover::after {
+    content: 
+    '\a |   |\\    ===================   \\'
+    '\a |   | \'---------------------------'
+    '\a |   | |                           |'
+    '\a |   | |                           |'
+    '\a |   | |          _______          |'
+    '\a |\\  | |         | Laila |         | '
+    '\a | \\ | |          -------          |'
+    '\a |  \\| |          =_____=          |'
+    '\a |   \\ |                           |'
+    '\a |   |\\|                           |'
+    '\a |   | \'---------------------------\''
+    ;
+    white-space: pre;
+}
+
+#cabinet_2_c::after {
+    content:     
+    '\a |   |          _______          |'
+    '\a |   |         | poems |         |'
+    '\a |   |          -------          |'
+    '\a \\   |          =_____=          |'
+    '\a  \\  |                           |'
+    '\a   \\ |                           |'
+    '\a    \\|___________________________|'
+    '\a'
+    '\a'
+    '\a'
+    ;
+    white-space: pre;
+}
+
+#cabinet_3_a::after{
+    content:  
+    '\a   _________________________'
+    '\a |\\                          \\'
+    '\a | \\                          \\'
+    '\a |  \\                          \\'
+    '\a |   \'---------------------------';
+    white-space: pre;
+}
+
+#cabinet_3_b::after {
+    content:  
+    '\a |   |                           |'
+    '\a |   |                           |  '
+    '\a |   |          _______          |'
+    '\a |   |         | poems |         |'
+    '\a |   |          -------          |'
+    '\a |\\  |          =_____=          |'
+    '\a | \\ |                           |'
+    '\a |  \\|                           |'
+    '\a |   \'===========================\''
+    ;
+    white-space: pre;
+}
+
+#cabinet_3_c::after{
+    content: 
+    '\a |   |                           |'
+    '\a |   |                           |'
+    '\a |   |          _______          |'
+    '\a |   |         | Emily |         |'
+    '\a |   |          -------          |'
+    '\a \\   |          =_____=          |'
+    '\a  \\  |                           |'
+    '\a   \\ |                           |'
+    '\a    \\|___________________________\'';
+    white-space: pre;
+}
+
+#cabinet_3_c:hover::after{
+    content: 
+    '\a|   |\\    / / /___\\__________    \\'
+    '\a|   | \'---------------------------\''
+    '\a|   | |                           |'
+    '\a|   | |                           |'
+    '\a|   | |          _______          |'
+    '\a|   | |         | Emily |         |'
+    '\a \\   | |          -------          |'
+    '\a  \\  | |          =_____=          |'
+    '\a   \\ | |                           |'
+    '\a    \\| |                           |'
+    '\a      \\\'___________________________\'';
+    white-space: pre;
+}
+
+/* DRAWER LV */
+.item_name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.folder::after{
+    content: '\a   _____'
+    '\a  /_____\\______________'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |    '
+    '\a \'---------------------\'';
+    
+    white-space: pre; 
+}
+
+.folder:hover::after{
+    content:'\a   _____'
+    '\a  /     \\______________'
+    '\a |   __________________|'
+    '\a | ||   --------------------'
+    '\a | || /                    /'
+    '\a | ||/                    /'
+    '\a | |/                    /'
+    '\a | /                    /'
+    '\a |/                    /'
+    '\a\'---------------------\'';
+
+}
+
+#folder_yvonne::after{
+    content: '\a   _____'
+    '\a  /_____\\______________'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |        Yvonne       |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |    '
+    '\a \'---------------------\'';
+    
+    white-space: pre;
+}
+#folder_yvonne:hover::after{
+    content:'\a   _____'
+    '\a  /     \\______________'
+    '\a |   __________________|'
+    '\a | ||   --------------------'
+    '\a | || /                    /'
+    '\a | ||/                    /'
+    '\a | |/       Yvonne       /'
+    '\a | /                    /'
+    '\a |/                    /'
+    '\a\'---------------------\'';
+}
+
+#folder_emily::after{
+    content: '\a   _____'
+    '\a  /_____\\______________'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |        Emily        |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |    '
+    '\a \'---------------------\'';
+    
+    white-space: pre;
+}
+#folder_emily:hover::after{
+    content:'\a   _____'
+    '\a  /     \\______________'
+    '\a |   __________________|'
+    '\a | ||   --------------------'
+    '\a | || /                    /'
+    '\a | ||/                    /'
+    '\a | |/        Emily       /'
+    '\a | /                    /'
+    '\a |/                    /'
+    '\a\'---------------------\'';
+}
+
+#folder_laila::after{
+    content: '\a   _____'
+    '\a  /_____\\______________'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |        Laila        |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |    '
+    '\a \'---------------------\'';
+    
+    white-space: pre;
+}
+#folder_laila:hover::after{
+    content:'\a   _____'
+    '\a  /     \\______________'
+    '\a |   __________________|'
+    '\a | ||   --------------------'
+    '\a | || /                    /'
+    '\a | ||/                    /'
+    '\a | |/        Laila       /'
+    '\a | /                    /'
+    '\a |/                    /'
+    '\a\'---------------------\'';
+}
+
+#folder_kade::after{
+    content: '\a   _____'
+    '\a  /_____\\______________'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |         Kade        |'
+    '\a |                     |'
+    '\a |                     |'
+    '\a |                     |    '
+    '\a \'---------------------\'';
+    
+    white-space: pre;
+}
+#folder_kade:hover::after{
+    content:'\a   _____'
+    '\a  /     \\______________'
+    '\a |   __________________|'
+    '\a | ||   --------------------'
+    '\a | || /                    /'
+    '\a | ||/                    /'
+    '\a | |/        Kade        /'
+    '\a | /                    /'
+    '\a |/                    /'
+    '\a\'---------------------\'';
+}
+
+/*  FOLDER LV */
+
+a.paper {
+    text-decoration: none;
+}
+
+.papers#grid4x {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.papers#grid2x {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.papers#grid3x {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.papers#grid4x {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.paper_group > .item_name {
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    margin: 20px;
+    /* text-align: center;  */
+}
+
+.paper {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+
+i#no_open {
+    text-decoration:underline;
+
+}
+
+.paper::after {
+    content: 
+    '\a.------.'
+    '\a|      |\\'
+    '\a|      \'-|'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a\'--------\'';
+    white-space: pre; 
+}
+
+.paper:hover::after {
+    content:
+    '\a.--------.'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a\'--------\'';
+    white-space: pre; 
+    
+}
+
+.paper#no_open::after {
+    content: 
+    '\a.------.'
+    '\a|      |\\'
+    '\a|      \'-|'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a\'--------\'';
+    white-space: pre; 
+    
+}
+
+.paper#no_open:hover::after {
+    content: 
+    '\a.------.'
+    '\a|      |\\'
+    '\a|      \'-|'
+    '\a|        |'
+    '\a|        |'
+    '\a|        |'
+    '\a\'--------\'';
+    white-space: pre; 
+    
+}
+
+/* POEM LV */
+.poem {
+    margin: 0px 0px 100px 0px;
+    line-height: 20px;
+}
+
+h1 {
+    margin-top: 100px;
+    margin-bottom: 0px;
+}
+
+/* p.poem {
+    position: absolute;
+    /* align-items: center; */
+    /* justify-content: center; */
+
+/* } */ 
+
+p.poem {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    transform: translate(50%, 0%);
+    flex-wrap: wrap;
+}
+
+p.poem.indent {
+    margin-bottom: 20pt;
+}
+
+.byline {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
+pre.poem {
+    margin-left:-150px;
+    
+}
+
+.indent {
+    text-indent: 30px;
+}
+
+i {
+    display: inline !important;
+}
