@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'MyWebFont';
+    src:  url('assets/SFMonoRegular.woff') format('woff');
+  }
+
+* {
+    font-size: 10pt;
+    font-family: 'MyWebFont', Fallback, monospace;
+}
+
+
+p.poem {
+    display: inline;
+    /* align-items: center;
+    justify-content: center; */
+    /* width: 50%;
+    transform: translate(50%, 0%); */
+    padding: 50%;
+}
+
+em {
+    display: inline !important
+}
