@@ -1,0 +1,130 @@
+body {
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+    /* background: rgb(235, 232, 232); */
+    /* position: relative; */
+    height: 100vh;
+    font-family: monospace;
+    background-image: linear-gradient(rgb(92, 92, 92), rgb(253, 255, 140));
+}
+
+.ufo {
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    /* border: 2px #000 solid; */
+    width: 100px;
+    height: 90px;
+    cursor: grab;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+.speech-bubble {
+    background-color: blue;
+    color: #fff;
+    border-radius: 50px;
+    width: 200px;
+    height: 20px;
+    text-align: center;
+    border: 1.5px dotted rgb(210, 210, 210);
+    background: #333;
+    /* width: 50%; */
+    /* height: 20%; */
+    padding: 0.2rem 0.375rem;
+    margin: 0px 0px 30px 0px;
+    display: grid;
+    position: fixed;
+    justify-content: center;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.ufo-head {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    background: #abf8d8;
+    display: grid;
+    align-items: center;
+    /* top: 10px; */
+    z-index: 3;
+    border: 1px solid #333;
+    text-align: center;
+}
+
+.ufo-body {
+    width: 100px;
+    height: 50px;
+    border-radius: 50%;
+    background: rgb(213, 213, 213);
+    display: grid;
+    align-items: center;
+    margin: -32px;
+    border: 1px solid #333;
+    z-index: 1;
+}
+
+.lights {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 2px -10px 0px 0px;
+    z-index: 2;
+}
+
+.light {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #fff;
+    border: 1px solid #333;
+}
+
+.light-1 {
+    margin: -15px 0px 0px 0px;
+}
+
+.light-3 {
+    margin: 0px 10px 0px 0px;
+}
+
+.light-4 {
+    margin: -15px 0px 0px 0px;
+}
+
+.legs {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.leg {
+    margin: 0px 7px;
+}
+
+.leg-1 {
+    margin: -7px -20px 0px 0px;
+}
+
+.leg-3 {
+    margin: -7px 0px 0px 10px;
+}
+
+.shin {
+    width: 5px;
+    height: 20px;
+    background: rgb(179, 97, 255);
+    border: 1px solid #333;
+    z-index: -1;
+}
+
+.foot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50px;
+    background: rgb(111, 39, 255);
+    border: 1px solid #333;
+    z-index: 0;
+    margin: -5px -1.5px;
+}
